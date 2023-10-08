@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+img{
+  max-width: 20%;
+}
+.containerInput{
+  background-color: rgba(255,255,255, 0.2);
+  padding: 15px;
+  margin: 34px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba(0,0,0, 0.5);
+}
+
+.containerInput input{
+  background-color: transparent;
+  padding: 10px;
+  border: 1px;
+  font-size: 20px;
+  color: black;
+}
+
+.containerInput input::placeholder{
+  color: #000000;
+  border: none;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.main h2{
+  margin: 16px 0 ;
+  font-size: 39px;
+  color: black;
+}
+.main span{
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.avisoNumeros{
+  color: rgba(255,255,255,0.3);
+  margin-top: -25px;
+  margin-bottom: 20px;
+  justify-content: right;
+}
+
+@media (max-width: 620px) {
+  body{
+    padding: 15px;
+  }
+  .botão{
+    font-size: 12px;
+  }
+  .title{
+    font-size: 36px;
+  }
+  .main h2{
+    font-size: 30px;
+  }
+
+  .main{
+    width: 100%;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
