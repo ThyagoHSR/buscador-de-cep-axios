@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import './App.css'
 import api from './api/api'
 import img from './assets/caminhao-de-entrega.png'
+import { Body, ContainerMain } from './components/BuscadorCEP/style'
 
-function App() {
+const App = () => {
   const [input, setInput] = useState('')
   const [cep, setCep] = useState({})
 
@@ -25,7 +25,9 @@ function App() {
     }
   }
   return (
-    <div className="container">
+    <>
+    <Body>
+    <ContainerMain>
       <h1 className="title">Buscador CEP</h1>
 
       <img src={img} alt="" />
@@ -37,7 +39,7 @@ function App() {
           placeholder="Digite seu CEP"
           value={input}
           onChange={e => setInput(e.target.value)}
-          maxlength="8"
+          maxLength="8"
         ></input>
 
         <button className='botão' onClick={handleSearch}>Pesquisar CEP
@@ -54,7 +56,9 @@ function App() {
           <span>Estado: {cep.uf}</span>
         </main>
       )}
-    </div>
+      </ContainerMain>
+      </Body>
+      </>
   )
 }
 
