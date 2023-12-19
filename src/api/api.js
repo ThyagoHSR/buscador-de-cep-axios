@@ -1,4 +1,5 @@
 import axios from 'axios';
+import axios from 'axios/dist/axios.min.js';
 
 
 // 08290001/json/

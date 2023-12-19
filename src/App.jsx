@@ -3,6 +3,7 @@ import api from './api/api'
 import img from './assets/caminhao-de-entrega.png'
 import { Body, ContainerMain } from './components/BuscadorCEP/style'
 
+
 const App = () => {
   const [input, setInput] = useState('')
   const [cep, setCep] = useState({})
